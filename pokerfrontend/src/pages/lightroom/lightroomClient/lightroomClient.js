@@ -24,7 +24,7 @@ function LightroomClient(props) {
             category: 'User',
             action: 'Went from lightroom main page to the homepage'
           });
-          window.location.href = "www.flhsolver.com";       
+          window.location.href = "/";       
     }
 
     return(
