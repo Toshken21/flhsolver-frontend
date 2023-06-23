@@ -10,6 +10,7 @@ import LightRoomAdmin from './pages/lightroom/lightroomAdmin/lightroomAdmin';
 import LightRoomPreview from './pages/lightroom/lightroomPreview/lightroomPreview';
 import LightroomClient from './pages/lightroom/lightroomClient/lightroomClient';
 import Article from './pages/lightroom/lightroomClient/components/individualComponents/article/article';
+import PageViewTracker from "./analytics/pageTracker";
 
 function usePageViews() {
   let location = useLocation();
@@ -56,7 +57,9 @@ function App() {
   return (
     <div>
       {/*Routes for the web-app*/}
+
         <Router>
+            <PageViewTracker/>
            <RoutesComponent sendPreviewData={sendPreviewData} previewData={previewData} />
         </Router>
     </div>
