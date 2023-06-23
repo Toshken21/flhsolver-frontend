@@ -45,7 +45,7 @@ function LightroomClient(props) {
                 
                 <h3 className={`${lightroomClientCSS["lightroom-h3"]} ${lightroomClientCSS["full-lighthouse"]}`}>Full <span className={lightroomClientCSS["lightroom-light"]} onClick={handleFLHClick}>Light</span>House</h3>
 
-                <Link to="http://localhost:3000" className={`${lightroomClientCSS["one-solver-parent"]}`} onClick={handleClick}>
+                <Link to="www.flhsolver.com" className={`${lightroomClientCSS["one-solver-parent"]}`} onClick={handleClick}>
                     <h4 className={`${lightroomClientCSS["lightroom-h3"]} ${lightroomClientCSS["one-solver"]}`}>One Solver, One Subscription<span className={lightroomClientCSS["lightroom-join-beta"]}>Coming soon!</span></h4>
                     
 

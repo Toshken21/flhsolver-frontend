@@ -230,7 +230,7 @@
             return;
         }
 
-        const response = await fetch('http://localhost:4000/beta/accounts/add', {
+        const response = await fetch('http://api.flhsolver.com/beta/accounts/add', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
