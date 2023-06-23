@@ -28,7 +28,7 @@ function ImageComponent(props){
         const formData = new FormData();
         formData.append("image", file);
         formData.append("caption", caption);
-        const response = await axios.post("http://localhost:4000/lightroomimage/add", formData, {headers: {"Content-Type": "multipart/form-data"}})
+        const response = await axios.post("http://api.flhsolver.com/lightroomimage/add", formData, {headers: {"Content-Type": "multipart/form-data"}})
         if(response.status === 201){
             setName(response.data.name);
         }
