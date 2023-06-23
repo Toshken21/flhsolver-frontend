@@ -13,7 +13,7 @@ function LightRoomPreview(props){
                 if(iteratedArray[1] === "img") {
                     try {
                         console.log(iteratedArray[2]);
-                        const response = await fetch(`http://localhost:4000/lightroomimage/view/${iteratedArray[2]}`, {
+                        const response = await fetch(`http://api.flhsolver.com/lightroomimage/view/${iteratedArray[2]}`, {
                             method: "GET",
                             headers: {
                                 'Content-Type': 'application/json',
