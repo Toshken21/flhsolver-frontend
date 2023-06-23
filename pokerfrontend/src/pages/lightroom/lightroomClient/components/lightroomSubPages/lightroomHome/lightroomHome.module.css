@@ -1,0 +1,68 @@
+.invisible-button {
+    display: flex;
+}
+
+
+
+.lightroom-home-adjust-button {
+    border-radius: 50%;
+    background-color: rgb(237, 194, 24);
+    height: 1.5em; /* or some value that suits your needs */
+    width: 1.5em; /* or some value that suits your needs */
+    font-size: 2em; /* or some value that suits your needs */
+    margin-top: 14.5vh; /* or some value that suits your needs */
+    justify-content: center;
+}
+
+.lightroom-home-h3 {
+    font-size: 2em; /* or some value that suits your needs */
+    margin-left: 5%; /* or some value that suits your needs */
+}
+
+.lightroom-home-body {
+    background-color: #0F1012;
+    width: 90%;
+    margin-left: 5%;
+    /* or some value that suits your needs */
+    overflow:hidden;
+    padding-bottom: 10em;
+    
+
+
+}
+
+.lightroom-newest-holder {
+    margin-left: 5%; /* or some value that suits your needs */
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .lightroom-home-body {
+        display: flex;
+        flex-direction: column;
+        margin-left:6%;
+    }
+
+    .lightroom-newest-holder {
+        flex-direction: column;
+    }
+
+    .lightroom-home-h3 {
+        margin-top: 2em;
+        font-size: 1.3em;
+        text-align: center;
+        margin-right: 1.2em;
+    }
+
+    .invisible-button {
+        display: none;
+    }
+
+    .lightroom-home-adjust-button {
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: 47%;
+    }
+
+
+}

@@ -1,0 +1,531 @@
+/* This section sets the stylesof the nav section*/
+nav {
+    position: relative;
+    
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+
+    grid-row: 1 / 1;
+    grid-column: 7 / 12;
+    
+      
+}
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    width: 225px;
+    
+
+    
+    
+}
+
+
+.nav-link {
+    float: left;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16.5px;
+    
+    width:100px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: rgb(220, 202, 10);
+}
+
+
+#beta-signup-nav {
+    width: 200px;
+}
+
+
+
+
+
+/* These styles set the properties of the container holding the title section */
+
+.title-container {
+
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    
+    
+}
+.title-container-height {
+    height: 80rem;
+}
+
+.title-container-bg {
+    background-image: url("./homeImages/lighthouse-final3.png");
+    filter: grayscale(35%);
+    background-size: cover;
+}
+
+.title-container-width {
+    max-width: 120rem;
+}
+
+
+
+
+
+/* These styles set the property of the title*/
+.title-lightup {
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-column: 5 / 11 ;
+    grid-row: 2 / 2;
+    color: white;
+    margin-right: 30px;
+}
+
+.title-lightup2 {
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-column: 5 / 9;
+    grid-row: 3/3;
+    color: rgb(255, 255, 255);
+}
+
+#title-span {
+    color: #ffd700;
+}
+
+/* These contains the styles for the title sentences under the title */
+
+.title-sentence {
+    font-size: 37.5px;
+    color:#fff;
+    text-align: center;
+}
+
+#first-title-sentence {
+    grid-row: 5;
+    grid-column: 5/ 9;
+    margin-bottom: 50px;
+}
+
+#second-title-sentence {
+    grid-row: 6;
+    grid-column: 5/9;
+}
+
+/* this section contains the styles of the overview section */
+
+.overview {
+    height: 750px;
+    width: 100%;
+    border: 2px solid grey;
+    background-color: rgb(19, 20, 21);
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+}
+
+.overview h2 {
+    font-size: 28.75px;
+    color: rgb(225, 218, 17);
+    margin-top: 75px;
+    margin-bottom: 75px ;
+    text-align: center;
+
+}
+
+#pair-of-aces {
+    margin-left: 100px;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    vertical-align: middle;
+    box-shadow: 4px 4px 4px rgb(11, 11, 11);
+
+}
+
+.text-holder-overview {
+    margin-left: 80px;
+    display: inline-block;
+    width: 800px;
+    height: 480px;
+    vertical-align: middle;
+    border: 2px solid rgb(23, 22, 22);
+    border-radius: 10px;
+    box-shadow: 10px 8px 4px rgb(11, 11, 11);
+
+}
+
+.text-holder-overview ul {
+    margin-top: 20px;
+}
+
+.text-holder-overview ul li {
+    font-size: 37px;
+    color: #fff;
+    
+}
+
+
+
+/* These styles are for the plans and pricing section */
+
+
+.our-pricing {
+    height:800px;
+    background-color: #fff;
+    border: 2px solid yellow;
+    margin-top: 10px;
+}
+
+.our-pricing h2 {
+    margin-top: 70px;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.our-pricing h3 {
+    margin-top: 75px;
+    font-size:22px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.subscription-box-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.subscription-box {
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    
+    width:230px;
+    height: 240px;
+    background: linear-gradient(ellipse 200px 200px, #2e2c2c 0%, #454040 50%, #0c0303 100%) ;
+    box-shadow: 6px 4px 4px rgb(81, 81, 77);
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .subscription-box-gradient-end {
+    position:relative;
+    background-color: #2e2c2c;
+    width: 120px;
+    height: 100px;
+    top: 100px;
+  }
+
+
+  .subscription-box h4 {
+    margin-top: 100px;
+    font-size: 40px;
+    color: goldenrod;
+  }
+  
+.subscription-box p {
+    font-size: 22px;
+    color: rgb(102, 99, 93);
+}
+  
+
+
+
+/*This style creates a quarter circle to show that is has the best value */
+
+  .most-value {
+    border: 1px solid black;
+    height: 40px;
+    margin-top: 0px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgb(194, 153, 49);
+
+  }
+
+  #most-value-text {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
+
+
+/*CSS for the affiliate program section */
+
+.affiliate-program {
+    display: grid;
+    height: 1800px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+    background-color: #ffd700;
+}
+
+.affiliate-program h2 {
+    font-size: 45px;
+    grid-column: 4 / 11;
+    margin-left: 100px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.thirty-percent-holder, .ten-percent-holder {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 6px 6px 4px rgb(136, 136, 11);
+    
+}
+
+.thirty-percent-holder {
+    grid-column: 3 / 6;
+    grid-row: 2 / 4;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.ten-percent-holder {
+    grid-column: 7 / 10;
+    grid-row: 2 / 4;
+    justify-content: center;
+    
+}
+
+.thirty-percent-holder h3 {
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 70px;  
+    
+}
+
+.ten-percent-holder h3 {
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+    
+}
+
+#upfront-sale-span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+#recurring-sales-span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.affiliate-program span {
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.thirty-percent-holder p {
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+.ten-percent-holder p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.example-h4 {
+    grid-row: 5;
+    grid-column: 4 / 10;
+    font-size: 30px;
+    margin-top: 53px
+}
+
+.commission-sale-div, .commission-recurring-div {
+    width: 500px;
+    height: 470px;
+    grid-row: 6;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 6px 6px 4px rgb(136,136, 11);
+    margin-top:40px;
+}
+
+.commission-sale-div {
+    
+    grid-column: 3 / 6;
+
+}
+
+.commission-recurring-div {
+    grid-column: 7 / 10;
+    margin-left: 100px;
+}
+
+.commission-sale-div h3 {
+    font-size: 115px;
+    text-align: center;
+}
+
+.commission-recurring-div h3 {
+    font-size: 115px;
+    text-align: center;
+    
+}
+
+#commission-sale-span, #commission-recurring-span {
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.commission-sale-div p {
+    font-size: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+
+.commission-recurring-div p {
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+.example-p {
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+#example-p-1 {
+    margin-top: 33px;
+    grid-row: 8 ;
+    grid-column: 3 / 10;
+}
+
+#example-p-2 {
+    grid-row: 8;
+    grid-column: 3 / 10;
+    margin-top: 65px;
+}
+
+
+
+
+
+/* CSS  for the Beta signup section */
+
+.beta-signup-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    
+    align-items: center;
+    background-color: #000; /* CHANGED */
+    padding: 50px;
+    height: 600px;
+  }
+  
+  .beta-signup-section h2 {
+    font-size: 64px;
+    color: #e7e4d5; /* ADDED */
+
+  }
+
+  #first-signup-h2 {
+    grid-row: 2 / 2;
+    grid-column: 2 /  4;
+  }
+
+  #second-signup-h2 {
+    grid-row: 3 / 3;
+    grid-column: 2 / 4;
+    margin-top: -40px;
+  }
+
+  .beta-signup-section span {
+    color: #ffd700;
+  }
+
+  .signup-vertical-line {
+    width: 1px;
+    height: 560px;
+    grid-row: 2 / 4;
+    grid-column: 5/ 5;
+    border-left: 1px solid gainsboro;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    grid-row: 2 / 6;
+    grid-column: 6 /  11;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* CHANGED */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid gold; /* CHANGED */
+    background-color: transparent; /* CHANGED */
+    color: #fff; /* CHANGED */
+    margin-bottom: 20px;
+    width: 700px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffd700;
+  }
+  
+  input[type="submit"] {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 250px;
+
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #000;
+    color: #ffd700;
+
+  }

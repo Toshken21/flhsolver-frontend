@@ -1,0 +1,74 @@
+.preview-container {
+    position: relative;
+    width: 15em; 
+    height: 20em; 
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-left: 1em;
+    margin-right: 1em; 
+    border-radius: 0.3em;
+    
+}
+
+.preview-h1 {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   margin-bottom: 1.5em;
+    padding-top: 2em;
+    font-size: 1.5em;
+}
+
+
+
+.preview-h3 {
+    text-align: center;
+    color: black;
+}
+
+.linkStyle {
+    text-decoration: none;
+}
+
+.preview-darker-div {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 7em;
+    top: 65%; /* Adjust as per your requirement */
+    width: 100%;
+}
+
+
+.preview-h3-container {
+    position: absolute;
+    top: 65%; /* Adjust as per your requirement */
+    
+    right: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 1em;
+    width: 45%; /* Reduced the width to prevent overflow */
+    height: 2em;
+    margin: 0 auto;
+    background-color: rgb(231, 190, 53);
+    z-index: 1;
+}
+
+
+@media (max-width: 500px) {
+    .preview-container {
+        width: 80%;
+        margin-top: 1em;
+        
+        
+    }
+
+    .preview-h3 {
+
+    }
+
+    .invisible-button {
+        display: none;
+    }
+}

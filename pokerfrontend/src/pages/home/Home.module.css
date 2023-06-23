@@ -1,0 +1,741 @@
+/* This section sets the stylesof the nav section*/
+
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+section {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.nav {
+    position: relative;
+    
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+
+    grid-row: 1 / 1;
+    grid-column: 7 / 12;
+    
+      
+}
+.nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    width: 225px;
+    
+}
+
+
+.nav-link {
+    float: left;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16.5px;
+    
+    width:100px;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    color: black;
+    background-color: rgb(220, 202, 10);
+    font-size: 16.5px;
+}
+
+
+#beta-signup-nav {
+    border: 2px solid #FABE17;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 750;
+    border-radius: 20px;
+    padding: 10;
+}
+
+
+
+
+
+/* These styles set the properties of the container holding the title section */
+
+.title-container {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #0B0A0B;
+    display: grid;
+    grid-template-columns:  70px repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 65px 80px 65px 50px 55px repeat(6, 1fr);
+    height: 800px;
+   
+    row-gap: 10px;
+}
+
+.title-h1, .title-h2, .title-h3, .title-h4 {
+    color: #e7e4d5;
+}
+
+.title-h1-span {
+    color: #FFBF00;
+}
+
+.title-h2 {
+    font-size: 45px;
+    grid-row: 3 / 3;
+    grid-column: 2 / 4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 450;
+}
+
+.title-h1 {
+    
+    font-size: 70px;
+    grid-row: 4 / 4;
+    grid-column: 2 / 7;
+}
+
+.title-h3 {
+    font-size: 35px;
+    grid-row: 5 / 5;
+    grid-column: 2 / 5;
+    padding-top: 10px;
+    font-weight: 250;
+}
+
+.title-h4 {
+    font-size: 25px;
+    grid-row: 8 / 9;
+    grid-column: 2 / 5;
+    font-weight: 300;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.title-join-beta {
+    display: flex;
+    font-size: 30px;
+    grid-row: 9 / 9;
+    grid-column: 2 / 3;
+    letter-spacing: 7px;
+    color: #1C1D20;
+    background-color: #FFBF00;
+    border-radius: 35px;
+    font-weight: 650;
+    text-shadow: 2px 2px 2px rgb(103, 98, 98);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 70px;
+
+
+}
+/* this section contains the styles of the overview section */
+
+.overview {
+    
+    height: 750px;
+    padding-top: 10px;
+    
+    
+    background-color: #0B0A0B;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+     
+
+}
+
+.overview h2 {
+    font-size: 45px;
+    color: #ffd700;
+    margin-top: 25px;
+    margin-bottom: 75px ;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.overview-content-holder {
+  display: flex;
+  text-align:center;
+}
+
+#pair-of-aces {
+    
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    vertical-align: middle;
+    box-shadow: 4px 4px 4px rgb(11, 11, 11);
+    float: left;
+    margin-left: 100px;
+
+}
+
+
+.text-holder-overview {
+    
+    display: inline-block;
+    width: 800px;
+    height: 480px;
+    vertical-align: middle;
+    margin-left: 130px;
+    
+    float: right;
+    border-radius: 10px;
+    box-shadow: 10px 8px 4px rgb(11, 11, 11);
+    
+
+}
+
+.text-holder-overview ul {
+    list-style-position: outside;
+    margin-top: 20px;
+    padding: 0;
+    content: "\25C7";
+    
+    
+}
+
+.text-holder-overview ul li {
+    font-size: 29px;
+    color: #fff;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top:32px;
+    
+    
+    
+}
+
+.text-holder-overview ul li::marker {
+    content: "\25C7";
+    
+    color: rgb(227, 184, 15);
+
+}
+
+
+
+
+
+/* These styles are for the plans and pricing section */
+
+
+  .our-pricing {
+      height: 650px;
+      background-color: #fff;
+      
+      margin-top: 10px;
+  }
+
+  .our-pricing h2 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 70px;
+      font-size: 36px;
+      text-align: center;
+      font-weight: 700;
+  }
+
+  .our-pricing h3 {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin-top: 75px;
+      font-size:22px;
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: 600;
+  }
+
+  .subscription-box-holder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  .subscription-box {
+      position: relative;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid black;
+      text-align: center;
+      
+      width:230px;
+      height: 240px;
+      background: linear-gradient(ellipse 200px 200px, #2e2c2c 0%, #454040 50%, #0c0303 100%) ;
+      box-shadow: 6px 4px 4px rgb(81, 81, 77);
+      background-color: #fff;
+      border-radius: 15px;
+      position: relative;
+    }
+    
+    .subscription-box-gradient-end {
+      position:relative;
+      background-color: #2e2c2c;
+      width: 120px;
+      height: 100px;
+      top: 100px;
+    }
+
+
+    .subscription-box h4 {
+      margin-top: 100px;
+      font-size: 40px;
+      color: goldenrod;
+    }
+    
+  .subscription-box-p {
+      font-size: 22px ;
+      color: rgb(102, 99, 93);
+  }
+    
+
+
+
+  /*This style creates a quarter circle to show that is has the best value */
+
+    .top-box-banner {
+      border: 1px solid black;
+      height: 40px;
+      margin-top: 0px;
+      width: 100%;
+      position: absolute;
+      border-radius: 10px 10px 0 0;
+      top: 0;
+      left: 0;
+      
+
+    }
+    
+
+
+    .top-banner-text {
+      text-align: center;
+      margin-top: 7px;
+      font-size: 22px;
+      color: #fff;
+      
+    }
+
+    #one-week-banner {
+      background-color: #F8DB1F;
+    }
+
+    #one-month-banner {
+      background-color: #FABE17;
+    }
+
+    #three-months-banner {
+      background-color: #FCA110;
+    }
+
+    #six-months-banner {
+      background-color: #FD8308;
+    }
+
+    #one-year-banner {
+      background-color: #e25914;
+    }
+
+
+  /*CSS for the affiliate program section */
+
+.affiliate-program {
+    display: grid;
+    height: 800px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+    background-color: #ffe138;
+}
+
+.affiliate-program h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    grid-column: 4/ 11;
+    margin-left: 90px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    color: rgb(204, 7, 43);
+    border-bottom: #FCA110;
+
+}
+
+.thirty-percent-holder, .ten-percent-holder {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 12px 8px 8px rgb(187, 85, 12);
+    
+}
+
+.thirty-percent-holder {
+    grid-column: 3 / 6;
+    grid-row: 2 / 4;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+#thirty-percent-id, #ten-percent-id, #commission-sale-id, #commission-recurring-id{
+    background-color: #ffd700;
+}
+
+
+
+.ten-percent-holder {
+    grid-column: 7 / 10;
+    grid-row: 2 / 4;
+    justify-content: center;
+    margin-left: 100px;
+    
+}
+
+.thirty-percent-holder h3 {
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    color: rgb(204, 7, 43);
+    
+    
+}
+
+.ten-percent-holder h3 {
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: rgb(204, 7, 43);
+    
+    
+    
+}
+
+#upfront-sale-span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+#recurring-sales-span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.affiliate-program span {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.thirty-percent-holder p {
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+.ten-percent-holder p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.example-h4 {
+    grid-row: 5;
+    grid-column: 4 / 10;
+    font-size: 35px;
+    margin-top: 53px
+}
+
+.commission-sale-div, .commission-recurring-div {
+    width: 500px;
+    height: 470px;
+    grid-row: 6;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 6px 6px 4px rgb(136,136, 11);
+    margin-top:40px;
+}
+
+.commission-sale-div {
+    
+    grid-column: 3 / 6;
+    margin-left: 40px;
+
+}
+
+.commission-recurring-div {
+    grid-column: 7 / 10;
+    margin-left: 100px;
+}
+
+.commission-sale-div h3 {
+    font-size: 115px;
+    text-align: center;
+}
+
+.commission-recurring-div h3 {
+    font-size: 115px;
+    text-align: center;
+    
+}
+
+#commission-sale-span, #commission-recurring-span {
+    font-size: 75px;
+    font-weight: 400;
+}
+
+.commission-sale-div p {
+    font-size: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+
+.commission-recurring-div p {
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+.example-p {
+    font-size: 28px;
+    margin-left: 150px;
+}
+
+#example-p-1 {
+    margin-top: 33px;
+    grid-row: 8 ;
+    grid-column: 2 / 10;
+}
+
+#example-p-2 {
+    grid-row: 8;
+    grid-column: 2 / 10;
+    margin-top: 65px;
+}
+
+
+
+
+/* CSS  for the Beta signup section */
+
+.beta-signup-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    
+    align-items: center;
+    background-color: #000; /* CHANGED */
+    padding: 50px;
+    height: 600px;
+  }
+  
+  .beta-signup-section h2 {
+    font-size: 75px;
+    color: #e7e4d5; /* ADDED */
+    margin-bottom: 120px;
+
+  }
+
+  #first-signup-h2 {
+    
+    grid-row: 2 / 2;
+    grid-column: 2 / 3;
+  }
+
+
+
+  .beta-signup-section span {
+    color: #ffd700;
+  }
+
+  .signup-vertical-line {
+    width: 1px;
+    height: 560px;
+    grid-row: 2 / 3;
+    grid-column: 4/ 4;
+    border-left: 1px solid gainsboro;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    grid-row: 1 / 6;
+    grid-column: 6 /  11;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* CHANGED */
+  }
+  
+  .odd-input, .even-input {
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid gold; /* CHANGED */
+    background-color: transparent; /* CHANGED */
+    color: #fff; /* CHANGED */
+    margin-bottom: 20px;
+    width: 700px;
+  }
+  
+  .odd-input:focus, .even-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffd700;
+  }
+  
+  .home-submit-button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin-top: 100px;
+    margin-left: 250px;
+
+  }
+  
+  .home-submit-button:hover {
+    background-color: #000;
+    color: #ffd700;
+    
+    font-size: 25px;
+
+  }
+
+
+  /* These styles are for the animations of the page */
+
+
+
+  @keyframes move-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .animate-move-down {
+    animation: move-down 1s ease-out forwards;
+  }
+
+  @keyframes move-up-box {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes move-down-box {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .animate-move-up-box {
+    animation: move-up-box 1.5s ease-out forwards;
+  }
+
+  .animate-move-down-box {
+    animation: move-down-box 1.5s ease-out forwards;
+  }
+
+
+  @keyframes move-down-affiliate {
+    from {
+        transform: translateY(-70px);
+        opacity: 0;
+    } to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
+  .animate-move-down-affiliate {
+    animation: move-down-affiliate 1s ease-out forwards;
+  }
+
+
+  @keyframes move-left-input {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    } to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+  }
+
+  @keyframes move-right-input {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    } to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+
+  .animate-move-right-input {
+    animation: move-right-input 1.5s ease-out forwards;
+  }
+
+  .animate-move-left-input {
+    animation: move-left-input 1.5s ease-out forwards;
+  }
+
+
+
+  /*These styles are necessary for animations to work*/
+
+  .odd-box {
+
+  }
+
+  .even-box {
+
+  }
+  
+ .text-holder-overview-li{
+  
+ }
+
+ .even-input{
+
+ }
+
+ .odd-input{
+
+ }

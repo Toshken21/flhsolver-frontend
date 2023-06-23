@@ -1,0 +1,165 @@
+.article-holder {
+    background-color: #0F1012;
+    width: 60%;
+    margin: auto; /* Centers the article in the middle of the page */
+    font-family: 'Times New Roman', Times, serif; /* This gives a more traditional news-like look */
+    padding: 2%;
+    padding-top: 0%;
+    display: flex;
+    justify-content: center; /* aligns horizontally */
+    align-items: center; /* aligns vertically */
+    /* whatever you want */
+    
+}
+
+.h1-div {
+    font-size: 1.9em; /* Adjust according to your requirements */
+    margin-bottom: 1em; /* Space after the h1 heading */
+    font-weight: bold;
+}
+
+.h1-div, .h2-div, .h3-div, .h4-div, .p-div {
+    color: #fff;
+}
+
+.h2-div {
+    font-size: 1.8em;
+}
+
+.h3-dim {
+    font-size: 1.75em;
+}
+
+
+.h4-div {
+    font-size: 1.5em; /* Adjust according to your requirements */
+    margin-bottom: 1em; /* Space after the heading */
+    font-weight: bold;
+}
+
+.p-div {
+    font-size: 1em; /* Normal text size for the paragraphs */
+    line-height: 1.5em; /* Line height for better readability */
+    margin-bottom: 1em; /* Space after each paragraph */
+}
+
+.img-div {
+    display: block; /* This makes the div a flex container */
+    justify-content: center; /* This centers the image horizontally */
+    max-width: 80%; /* This will ensure the image does not overflow its container */
+    max-height: 30em;
+    height: auto; /* To maintain the image aspect ratio */
+    margin-bottom: 1em; /* Space after the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.lightroom-holder {
+    font-size: 3em;
+    margin-left: 0.4em;
+    color: #fff;
+
+}
+
+.lightroom-a {
+    text-decoration: none;
+}
+
+.lightroom-span {
+    color: goldenrod;
+}
+
+.article-nav-ul {
+    display: flex;
+    margin-right: 2rem;
+    margin-top: 30px;
+}
+
+.article-nav-li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.article-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.article-body {
+    background-color:   #1C1D20;
+    text-align: center;
+
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%; /* Adjust as needed */
+    margin-top: 5em;
+}
+
+.other-articles {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8em;
+    margin-top: 2em;
+}
+
+.content-lightroom-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* or center depending on your design */
+}
+
+
+/* This section are for the media queries of the article component */
+
+@media (max-width: 600px) {
+    .article-holder {
+        width: 85%;
+    }
+
+    .h1-div {
+        font-size: 1.4em;
+    }
+
+    .h2-div {
+        font-size: 1.4em;
+    }
+
+    .img-div {
+        max-width: 90%;
+    }
+
+    .lightroom-holder {
+        font-size: 1.2em;
+    }
+
+    .article-nav-li {
+        font-size: 0.8em;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+    .article-nav-ul {
+        margin-right: 0.5rem;
+        margin-top: 1em;
+    }
+
+    .other-articles {
+        font-size: 1.3em;
+    }
+
+    .article-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

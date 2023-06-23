@@ -1,0 +1,55 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+
+.reset-button {
+    width: 200px;
+}
+
+.h1-preview, .h2-preview, .h3-preview, .h4-preview {
+    color: #fff;
+    
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.p-preview {
+    color: #d9d9d9;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 45em;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.preview-holder {
+    background-color: #242020;
+}
+
+.h1-preview {
+    font-size: 40px;
+    line-height: 1.2px;
+    font-family: "Roboto", sans-serif;
+}
+
+.h2-preview {
+    font-size: 28px;
+    line-height: 1.2px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.h3-preview {
+    font-size: 24px;
+    line-height: 1.2px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.h4-preview {
+    font-size: 18px;
+    line-height: 1.2px;
+    font-family: "Montserrat", sans-serif;
+}

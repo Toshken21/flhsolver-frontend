@@ -1,0 +1,57 @@
+.visible-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.invisible-table {
+    display: none;
+}
+
+.content-table-parent-div {
+    position: fixed;
+    top: 200px; /* position from the top */
+    left: 7px; /* position from the left */
+}
+
+.content-table-holder {
+    background-color: goldenrod;
+    text-align: left;
+    width: 260px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.content-table-button {
+    border-radius: 90px;
+    background-color: goldenrod;
+    width: 3em;
+    height: 3em;
+    margin-bottom: 1em;
+    transform: translateY(-1em);
+    position: absolute;
+    top: 140px; /* position from the top */
+    left: 108px; /* position from the left */
+}
+
+.content-table-link {
+    color: #fff;
+}
+
+.content-table-link:hover {
+    color: red;
+}
+
+.content-table-h3 {
+    color: #fff;
+    margin-left: 2.7em;
+}
+
+
+@media (max-width: 600px) {
+    .content-table-parent-div {
+        display: none;
+    }
+
+
+}

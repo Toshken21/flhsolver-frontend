@@ -1,0 +1,43 @@
+.embedded-image {
+    width: 330px;
+    max-height: 300px;
+    
+}
+
+
+.embedded-container {
+
+    text-align: center;
+    color: #fff;
+    
+    
+}
+
+.embedded-container:hover {
+    color: goldenrod;
+    
+
+
+}
+
+
+.linkStyle {
+    text-decoration: none;
+    
+}
+
+.embedded-h3 {
+    font-size: 1.6em;
+    
+}
+
+@media (max-width: 600) {
+    .embedded-h3 {
+        font-size: 1em;
+    }
+
+    .embedded-container {
+        width: 90%;
+        border: 1px solid gold;
+    }
+}

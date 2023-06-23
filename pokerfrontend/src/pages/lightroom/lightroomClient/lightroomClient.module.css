@@ -1,0 +1,169 @@
+.lightroom-body {
+    background-color: #1C1D20;
+}
+
+.lightroom-title, .lightroom-body {
+    color: #fff;
+}
+
+
+.flhsolver-link {
+    
+    text-decoration: none; /* removes underline */
+    color: inherit; /* ensures the text color matches the parent color */
+    display: block; /* change this according to your needs */
+    grid-column: 9 / 12;
+
+}
+.lightroom-upper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 12.5em;
+}
+
+.lightroom-nav-li {
+    display: inline;
+    margin-left: 2em;
+    font-size: 1.25em;
+}
+
+.lightroom-nav {
+    grid-column: 8 / 12;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.4em;
+}
+
+.lightroom-title {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    font-size: 4.375em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.everything-poker {
+    margin-top: 0;
+    font-size: 1.875em;
+    grid-column: 2 / 6;
+    grid-row: 2;
+    color: #545454;
+}
+
+.full-lighthouse {
+    grid-column: 9 / 12;
+    grid-row: 2;
+    margin-bottom: 0;
+    font-size: 3.125em;
+    margin-top: -0.8em;
+}
+
+.one-solver-parent {
+    grid-column: 9 / 12;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: -0.7em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.one-solver {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.lightroom-join-beta {
+    
+    color: black;
+    font-size: 0.95em;
+    margin-left: 0;
+    text-align: center;
+    margin-left: 0.625em;
+    margin-bottom: 1.125em;
+    border-radius: 1.1875em;
+    background-color: gold;
+    text-align: center;
+}
+
+.lightroom-light {
+    color: goldenrod;
+}
+
+.lightroom-ul {
+    display: flex;
+    margin-left: 3.125em;
+    margin-top: 1.875em;
+}
+
+.lightroom-li {
+    display: inline;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+    font-size: 1.25em;
+}
+
+@media (max-width: 500px) {
+    .lightroom-upper {
+        height: 4em;
+    }
+
+    .lightroom-title {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .everything-poker {
+        font-size: 0.75em;
+        margin-top: -1.4em;
+    }
+
+    .one-solver {
+        
+        
+        font-size: 0.5em;
+    }
+
+    .lightroom-h3 {
+        font-size: 1em;
+    }
+
+    .lightroom-nav-li {
+        font-size: 0.6em;
+        margin-left: 0.8em;
+    }
+
+    .lightroom-nav {
+        grid-column: 3 / 12;
+    }
+
+    .lightroom-nav-ul {
+        margin-left: 0em;
+    }
+
+    .full-lighthouse {
+        grid-column: 8 / 12;
+        font-size: 0.8em;
+        padding-bottom: 0.5em;
+    }
+
+    .one-solver-parent {
+        grid-column: 8 / 12;
+        
+    }
+
+    .one-solver {
+        font-size: 0.6em;
+    }
+
+    .lightroom-ul {
+        margin-left: 0.4em;
+    }
+
+    .lightroom-li {
+        font-size: 0.65em;
+    }
+}

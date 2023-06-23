@@ -1,0 +1,11 @@
+.range-holder {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .range-row {
+    display: flex;
+  }
+
+
+  
