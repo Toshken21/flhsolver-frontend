@@ -2,6 +2,7 @@ import react, {useState, useEffect} from "react";
 import ReactGA from "react-ga";
 //import HomeCSS from "./Home.module.css";
 import HomeCSS from "./Home.module.css";
+import CookieConsent from "../../analytics/cookiesConsent/cookiesConsent";
 
 const  clearText = (event) => {
     if(event.target.value === "Name" || event.target.value === "Age" || event.target.value === "Email"){
@@ -386,7 +387,7 @@ const handleSubmit = async(event) => {
                     <input name="submit" type="submit" id={HomeCSS["signup-button"]} className={`${HomeCSS["home-submit-button"]}`} value="Sign up for beta"/>
                 </form>
             </section>
-                
+            <CookieConsent/>
             
 
 

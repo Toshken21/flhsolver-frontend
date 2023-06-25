@@ -3,6 +3,7 @@ import lightroomClientCSS from "./lightroomClient.module.css";
 import LightroomHome from "./components/lightroomSubPages/lightroomHome/lightroomHome";
 import ReactGA from "react-ga";
 import { Link } from "react-router-dom";
+import CookieConsent from "../../../analytics/cookiesConsent/cookiesConsent";
 
 
 
@@ -61,6 +62,7 @@ function LightroomClient(props) {
                     <li className={lightroomClientCSS["lightroom-li"]}>Guides</li>
                 </ul>
                 <LightroomHome />
+                <CookieConsent/>
 
             </div>
         </div>
