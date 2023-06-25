@@ -25,7 +25,7 @@ function RoutesComponent({sendPreviewData, previewData}) {
   usePageViews();
   return (
     <Routes>
-      <Route exact path="/dataprivacy" element={PrivacyPolicy}></Route>
+      <Route exact path="/dataprivacy" element={<PrivacyPolicy/>}></Route>
       <Route exact path="/" element={<HomePage/>}></Route>
       <Route exact path="/solver" element={<SolverFrontend/>}></Route>
       <Route exact path="/seventwoadmin" element={<LightRoomAdmin sendPreviewData={sendPreviewData}/>}></Route>
