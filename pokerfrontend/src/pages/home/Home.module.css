@@ -769,7 +769,7 @@ section {
     height: 20em;
     grid-template-columns: repeat (10, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    border: 1px solid gold;
+    
   }
 
   .title-h2 {
@@ -818,7 +818,7 @@ section {
 
   .overview {
     width: 100%;
-    border: 1px solid red;
+    
     height: 34em;
   }
 
