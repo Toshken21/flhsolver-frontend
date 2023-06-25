@@ -17,7 +17,7 @@ const CookieConsent = () => {
 
     return (
         <div className="cookie-banner">
-            <p>This website uses cookies to enhance the user experience. By using our website, you consent to all cookies in accordance with our <a className="yellow-a" href="/dataprivacy">cookie and data privacy policy</a> Policy.</p>
+            <p>This website uses cookies to enhance the user experience. By using our website, you consent to all cookies in accordance with our <a className="yellow-a" href="/dataprivacy">cookie and data privacy policy.</a></p>
             <button className="cookie-banner-button" onClick={acceptCookies}>I understand</button>
         </div>
     );
