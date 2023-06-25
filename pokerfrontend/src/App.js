@@ -11,6 +11,7 @@ import LightRoomPreview from './pages/lightroom/lightroomPreview/lightroomPrevie
 import LightroomClient from './pages/lightroom/lightroomClient/lightroomClient';
 import Article from './pages/lightroom/lightroomClient/components/individualComponents/article/article';
 import PageViewTracker from "./analytics/pageTracker";
+import PrivacyPolicy from "./analytics/dataPolicy/dataPolicy";
 
 function usePageViews() {
   let location = useLocation();
@@ -24,6 +25,7 @@ function RoutesComponent({sendPreviewData, previewData}) {
   usePageViews();
   return (
     <Routes>
+      <Route exact path="/dataprivacy" element={PrivacyPolicy}></Route>
       <Route exact path="/" element={<HomePage/>}></Route>
       <Route exact path="/solver" element={<SolverFrontend/>}></Route>
       <Route exact path="/seventwoadmin" element={<LightRoomAdmin sendPreviewData={sendPreviewData}/>}></Route>

@@ -26,6 +26,10 @@
     border-radius: 12px;
 }
 
+.yellow-a {
+    color: goldenrod;
+}
+
 @media (max-width: 600px) {
     .cookie-banner {
         flex-direction: column;
