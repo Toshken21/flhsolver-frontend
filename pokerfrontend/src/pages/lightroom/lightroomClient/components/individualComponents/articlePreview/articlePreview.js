@@ -24,7 +24,23 @@ function ArticlePreview(props) {
         console.log(id);
     }, [id]);
 
-    // This useEffect gets used to render the background image 
+    // This useEffect is used to lessen the font size of the title
+    const abbreviateTitle = (insertedLink) => {
+        let elements = document.getElementById('preview-h1');
+        if(insertedLink.length > 20) {
+            elements.style.fontSize = "0.9em";
+            
+        }
+        return insertedLink;
+    }
+
+    useEffect(() => {
+        if(articleTitle){
+            abbreviateTitle(articleTitle);
+        }
+     // This useEffect gets used to render the background image        
+
+    }, [articleTitle]);
 
     useEffect(() => {
 
