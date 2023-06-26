@@ -115,7 +115,7 @@ function TextEditor(props) {
       return;
     }
 
-    const response = await fetch("http://api.flhsolver.com/lightroom/article/add", {
+    const response = await fetch("https://api.flhsolver.com/lightroom/article/add", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -138,7 +138,7 @@ function TextEditor(props) {
     formData.append("caption", articleTitle);
 
     
-    const response = await axios.post("http://api.flhsolver.com/lightroomimage/add", formData, {headers: {"Content-Type": "multipart/form-data"}})
+    const response = await axios.post("https://api.flhsolver.com/lightroomimage/add", formData, {headers: {"Content-Type": "multipart/form-data"}})
     if(response.status === 201){
       setImageLink(response.data.name);
       console.log(imageLink);
