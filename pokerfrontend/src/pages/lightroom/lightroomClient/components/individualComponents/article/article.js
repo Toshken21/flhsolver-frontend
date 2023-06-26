@@ -187,6 +187,7 @@ function Article(props) {
                         return (
                             <div>
                                 <img className={articleCSS["img-div"]} key={iteratedArray[0]} src={imageData[iteratedArray[2]].url} alt="image"/>
+                                <br/>
                             </div>
                         );
                     }
