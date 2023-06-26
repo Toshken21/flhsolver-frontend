@@ -133,6 +133,7 @@ function Article(props) {
                         <Element name={elementName}>
                             <div className={articleCSS["h1-div"]}>
                                 <h1 className={articleCSS["h1-div"]} key={iteratedArray[0]} > {iteratedArray[2]} </h1>
+                                <br/>
                             </div>
                         </Element>
 
@@ -142,7 +143,7 @@ function Article(props) {
                         <Element name={elementName}>
                             <div>
                                 <h2 className={articleCSS["h2-div"]} key={iteratedArray[0]} >{iteratedArray[2]}</h2>
-                                <br/>
+                                
                             </div>
                         </Element>
 
@@ -155,7 +156,7 @@ function Article(props) {
                         <Element name={elementName}>
                             <div>
                                 <h3 className={articleCSS["h3-div"]} key={iteratedArray[0]} >{iteratedArray[2]}</h3>
-                                <br/>
+                               
                             </div>
                         </Element>
 
@@ -167,7 +168,7 @@ function Article(props) {
                         <Element name={elementName}>
                             <div>
                                 <h4 className={articleCSS["h4-div"]} key={iteratedArray[0]}>{iteratedArray[2]}</h4>
-                                <br/>
+                                
                             </div>
                         </Element>
 
@@ -177,7 +178,7 @@ function Article(props) {
                     return (
                     <div>
                         <p className={articleCSS["p-div"]} key={iteratedArray[0]}>{iteratedArray[2]}</p>
-                        <br/>
+                        
                     </div>
                     )
                     
