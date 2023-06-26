@@ -36,7 +36,7 @@ function ArticlePreview(props) {
 
     const fetchThumbnail = async () => {
         try {
-            const response = await fetch(`http://api.flhsolver.com/lightroomimage/view/${articleThumbnail}`, {
+            const response = await fetch(`https://api.flhsolver.com/lightroomimage/view/${articleThumbnail}`, {
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json',

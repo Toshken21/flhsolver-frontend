@@ -42,7 +42,7 @@ function Article(props) {
     useEffect(() => {
         const fetchArticle = async () => {
             try {
-                const response = await fetch(`http://api.flhsolver.com/lightroom/article/view/${id}`);
+                const response = await fetch(`https://api.flhsolver.com/lightroom/article/view/${id}`);
                 if (!response.ok) {
                     throw new Error(`HTTP Error! status: ${response.status}`);
                 }
@@ -54,7 +54,7 @@ function Article(props) {
                 articleData.content.forEach(async (iteratedArray) => {
                     if (iteratedArray[1] === "img") {
                         try {
-                            const imgResponse = await fetch(`http://api.flhsolver.com/lightroomimage/view/${iteratedArray[2]}`);
+                            const imgResponse = await fetch(`https://api.flhsolver.com/lightroomimage/view/${iteratedArray[2]}`);
                             if (!imgResponse.ok) {
                                 throw new Error(`HTTP Error! status: ${imgResponse.status}`);
                             }
@@ -203,7 +203,7 @@ function Article(props) {
         <div className={articleCSS["article-body"]}>
             <nav className={articleCSS["article-nav"]}>
                 
-                <a href="http://www.flhsolver.com/seventwo" className={articleCSS["lightroom-a"]}><h2 className={articleCSS["lightroom-holder"]}><span className={articleCSS["lightroom-span"]} onClick={handleLightroomClick}>Seven</span>Two</h2></a>
+                <a href="https://www.flhsolver.com/seventwo" className={articleCSS["lightroom-a"]}><h2 className={articleCSS["lightroom-holder"]}><span className={articleCSS["lightroom-span"]} onClick={handleLightroomClick}>Seven</span>Two</h2></a>
                 {!isLoading && <TableOfContents content={content} />}
                
 

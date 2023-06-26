@@ -26,7 +26,7 @@ function LightroomHome(props) {
 
     // useEffect hook to fetch articles
     useEffect(() => {
-        fetch("http://api.flhsolver.com/lightroom/article/view/all")
+        fetch("https://api.flhsolver.com/lightroom/article/view/all")
         .then(response => {
             if(response.ok) {
                 return response.json();
