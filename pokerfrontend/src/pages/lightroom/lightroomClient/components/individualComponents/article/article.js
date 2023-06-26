@@ -13,6 +13,7 @@ function Article(props) {
     const [allArticles, setAllArticles] = useState([]);
     const [embeddedArticles, setEmbeddedArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [title, setTitle] = useState();
     
     
     // this function is used to measure how often the users go back to the main lightroom page
@@ -22,6 +23,17 @@ function Article(props) {
             action: 'Went back to the main lightroom page from an article'
           });
     }
+
+    //function for shortening link
+
+    const abbreviateLink = (insertedLink) => {
+        if(insertedLink.length > 20) {
+            insertedLink = insertedLink.slice(0, 20) + "...";
+            
+        }
+        return insertedLink;
+    }
+        
 
 
 
@@ -48,6 +60,7 @@ function Article(props) {
                 }
                 const articleData = await response.json();
                 setContent(articleData.content);
+                setTitle(abbreviateLink(articleData.title));
 
                 //Fetch image data for each image in the article
 
@@ -206,6 +219,7 @@ function Article(props) {
             <nav className={articleCSS["article-nav"]}>
                 
                 <a href="https://www.flhsolver.com/seventwo" className={articleCSS["lightroom-a"]}><h2 className={articleCSS["lightroom-holder"]}><span className={articleCSS["lightroom-span"]} onClick={handleLightroomClick}>Seven</span>Two</h2></a>
+                <p className={articleCSS["internal-linking"]}><a href="/seventwo">SevenTwo</a>/<a>{title}</a></p>
                 {!isLoading && <TableOfContents content={content} />}
                
 

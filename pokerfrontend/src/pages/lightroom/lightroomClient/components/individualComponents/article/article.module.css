@@ -141,6 +141,18 @@
     align-items: start; /* or center depending on your design */
 }
 
+.internal-linking, .internal-linking a {
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+    text-decoration: none;
+}
+
+.internal-linking {
+    position: absolute;
+    top: 7.5em;
+    left: 1em;
+}
+
 
 /* This section are for the media queries of the article component */
 
@@ -150,7 +162,11 @@
     }
 
     .h1-div {
-        font-size: 1.2em;
+
+        margin-top: 2em;
+        font-size: 1.1em;
+        margin-left: 0.5em;
+        
     }
 
     .h2-div {
@@ -187,5 +203,11 @@
 
     .h1-div, .h2-div, .h3-div, .h4-div, .p-div {
         max-width: 90%;
+    }
+
+    .internal-linking {
+        top: 4.2em;
+        left: 2.9em;
+        margin-bottom: 0em;
     }
 }
