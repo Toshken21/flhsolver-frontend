@@ -12,6 +12,7 @@ function ArticlePreview(props) {
     const [articleThumbnailUrl, setArticleThumbnailUrl] = useState("");
     const [content, setContent] = useState(props.content);
     const [id, setId] = useState(props.id);
+    const [fontSize, setFontSize] = useState('initial');
 
     const handleClick = () => {
         ReactGA.event({
@@ -25,22 +26,16 @@ function ArticlePreview(props) {
     }, [id]);
 
     // This useEffect is used to lessen the font size of the title
-    const abbreviateTitle = (insertedLink) => {
-        let elements = document.getElementById('preview-h1');
-        if(insertedLink.length > 20) {
-            elements.style.fontSize = "0.9em";
-            
-        }
-        return insertedLink;
-    }
-
     useEffect(() => {
-        if(articleTitle){
-            abbreviateTitle(articleTitle);
+        if (articleTitle && articleTitle.length > 20) {
+            setFontSize('0.9em');
+        } else {
+            setFontSize('initial');
         }
+    }, [articleTitle]);
      // This useEffect gets used to render the background image        
 
-    }, [articleTitle]);
+    
 
     useEffect(() => {
 
@@ -87,7 +82,7 @@ function ArticlePreview(props) {
                     <h3 className={articlePreviewCSS["preview-h3"]}>{articleTag}</h3>
                 </div>
                 <div className={articlePreviewCSS["preview-darker-div"]}>
-                <h1 className={articlePreviewCSS["preview-h1"]}>{articleTitle}</h1>
+                <h1 className={articlePreviewCSS["preview-h1"]} style={{fontSize: fontSize}}>{articleTitle}</h1>
                 </div>
                 
             </div>

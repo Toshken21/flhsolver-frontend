@@ -11,6 +11,7 @@ function EmbeddedArticlePreview(props) {
     const [articleThumbnailUrl, setArticleThumbnailUrl] = useState("");
     const [content, setContent] = useState(props.content);
     const [id, setId] = useState(props.id);
+    const [fontSize, setFontSize] = useState('initial');
   
 
 
@@ -29,27 +30,15 @@ function EmbeddedArticlePreview(props) {
 
 
     // This useEffect is used to lessen the font size of the title
-    const abbreviateTitle = (insertedLink) => {
-        let elements = document.getElementById('preview-h1');
-        if(insertedLink.length > 20) {
-            elements.style.fontSize = "0.9em";
-            
-        }
-        return insertedLink;
-    }
-
     useEffect(() => {
-        if(articleTitle){
-            abbreviateTitle(articleTitle);
-        }}, [articleTitle]);
+        if (articleTitle && articleTitle.length > 20) {
+            setFontSize('0.9em');
+        } else {
+            setFontSize('initial');
+        }
+    }, [articleTitle]);
 
-        // This useEffect gets used to render the image 
 
-        useEffect(() => {
-
-            fetchThumbnail();
-            
-        }, [articleThumbnail]);
 
             // useEffect hook to fetch articles
    
@@ -82,7 +71,7 @@ function EmbeddedArticlePreview(props) {
             <Link to={`/seventwo/article/${id}`} className={EmbeddedPreviewCSS["linkStyle"]} onClick={handleClick}>
                 <div className={EmbeddedPreviewCSS["embedded-container"]} width={400} height={400}>
                     <img src={articleThumbnailUrl} className={EmbeddedPreviewCSS["embedded-image"]} />
-                    <h3 className={EmbeddedPreviewCSS["embedded-h3"]}>{articleTitle}</h3>
+                    <h3 className={EmbeddedPreviewCSS["embedded-h3"]} style={{fontSize: fontSize}}>{articleTitle}</h3>
                     
                     
                 </div>
