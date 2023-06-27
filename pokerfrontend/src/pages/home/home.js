@@ -255,6 +255,13 @@ const handleSubmit = async(event) => {
 
 
             <section className={HomeCSS["title-container"]}>
+                <a href="/seventwo">
+                    <div className={HomeCSS["seven-two-promo"]}>
+                        <h3 className={HomeCSS["seven-two-h2"]}>Check out <span className={HomeCSS["seven-two-span"]}>Seven</span>Two</h3>
+                        <p className={HomeCSS["seven-two-p"]}>#1 source for free poker content</p>
+                    </div>                
+                </a>                
+
                 <nav className={HomeCSS["nav"]}>
                     <ul className={HomeCSS["nav-ul"]}>
                         <li>
@@ -301,7 +308,7 @@ const handleSubmit = async(event) => {
                 
 
             </section>
-
+{/*
             <section className={HomeCSS["our-pricing"]} id="our-pricing">
                 <h2 className={HomeCSS["our-pricing-h2"]}>Plans and pricing</h2>
                 <h3 className={HomeCSS["our-pricing-h3"]}>All of our subscriptions include the Full LightHouse equity solver and any tools or content developed in the future. Cancellable any time. Taxes included.</h3>
@@ -374,6 +381,7 @@ const handleSubmit = async(event) => {
                 
 
             </section>
+    */}
             <section className={HomeCSS["beta-signup-section"]} id="beta-signup-section">
                 
                 
