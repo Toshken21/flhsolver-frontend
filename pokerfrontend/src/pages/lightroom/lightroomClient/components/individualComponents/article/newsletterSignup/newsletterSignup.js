@@ -27,7 +27,8 @@ function NewsletterSignup() {
             });
             console.log(response.body);
             event.target.value = "";
-            setSignupMessage("Thank you for signing up!");
+            
+            alert("Thank you for signing up!");
         }
     }
 
