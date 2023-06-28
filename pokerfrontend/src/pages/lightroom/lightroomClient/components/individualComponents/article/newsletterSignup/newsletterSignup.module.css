@@ -1,0 +1,65 @@
+.newsletter-holder {
+    background-color: goldenrod;
+    width: 53.8%;
+    margin-left: 22em;
+    margin-top: -1.3em;
+
+}
+
+
+
+.newsletter-h4 {
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
+    margin-left: 3.7em;
+    margin-top: 1em;
+}
+
+.newsletter-p {
+    color: black;
+    text-align: left;
+    margin-left: 5.5em;
+    margin-top: -2em;
+    font-size: 1.1em;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    
+    padding-bottom: 1em;
+    
+    
+}
+
+.newsletter-input {
+
+    width: 20em;
+    font-size: 1.4em;
+    margin-left: 4.4em;
+    
+    
+}
+
+
+@media (max-width: 600px) {
+    .newsletter-holder {
+        width: 88.5%;
+        margin-left: 1.8em;
+    }
+
+    .newsletter-h4 {
+        margin-left: 1em;
+    }
+
+    .newsletter-p {
+        margin-left: 1.5em;
+    }
+
+    .newsletter-input {
+        margin-left: 1.3em;
+        width: 15em;
+    }
+}

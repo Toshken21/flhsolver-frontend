@@ -5,6 +5,7 @@ import EmbeddedArticlePreview from "./embeddedArticlePreview/embeddedArticlePrev
 import { Link, Element } from "react-scroll";
 import TableOfContents from "./tableOfContents/tableOfContents";
 import ReactGA from "react-ga";
+import NewsletterSignup from "./newsletterSignup/newsletterSignup";
 
 function Article(props) {
     let {id} = useParams();
@@ -236,6 +237,7 @@ function Article(props) {
                 
             
             </article>
+            <NewsletterSignup/>
             <h4 className={articleCSS["other-articles"]}>Other Articles</h4>
             <footer className={articleCSS["article-footer"]}>
             
