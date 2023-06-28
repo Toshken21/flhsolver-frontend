@@ -5,6 +5,7 @@ function NewsletterSignup() {
     const [email, setEmail] = useState('');
     
     const [isValid, setIsValid] = useState(true);
+    const [signupMessage, setSignupMessage] = useState("");
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -25,6 +26,8 @@ function NewsletterSignup() {
                 body: JSON.stringify({email}),
             });
             console.log(response.body);
+            event.target.value = "";
+            setSignupMessage("Thank you for signing up!");
         }
     }
 
@@ -55,6 +58,7 @@ function NewsletterSignup() {
                 />
                 <input type="submit" className={NewsletterCSS["newsletter-submit"]} value="submit"/>
             </form>
+            <p className={NewsletterCSS["newsletter-p"]}>{signupMessage}</p>
             
         </div>
     );
