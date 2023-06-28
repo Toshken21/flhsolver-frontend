@@ -58,7 +58,7 @@ function NewsletterSignup() {
                 />
                 <input type="submit" className={NewsletterCSS["newsletter-submit"]} value="submit"/>
             </form>
-            <p className={NewsletterCSS["newsletter-p"]}>{signupMessage}</p>
+            <p className={NewsletterCSS["newsletter-p"]}></p>
             
         </div>
     );
