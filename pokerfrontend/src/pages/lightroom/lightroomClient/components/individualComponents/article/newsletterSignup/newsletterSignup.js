@@ -16,7 +16,7 @@ function NewsletterSignup() {
 
         }
 
-        if(setIsValid){
+        if(isValid){
             const response = await fetch("https://api.flhsolver.com/newsletter/add", {
                 method: "POST",
                 headers: {
